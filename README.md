@@ -72,10 +72,9 @@ npm install allure-commandline --save-dev</code>
 ### Configure Allure Reporter in wdio.conf.js
 
 Open your wdio.conf.js file and add @wdio/allure-reporter to the reporters array. You can also specify additional options to customize the report.
-- <code>// wdio.conf.js
-export const config = {
-    // other configurations...
 
+- <code>
+export const config = {
     reporters: [
         'spec',
         ['allure', {
@@ -84,8 +83,6 @@ export const config = {
             disableWebdriverScreenshotsReporting: false,
         }]
     ],
-
-    // other configurations...
 };
 </code>
 

@@ -31,15 +31,15 @@
 
 ### Step 3: Install WebdriverIO CLI
 Install WebdriverIO globally (optional) to make the CLI available system-wide:
-  - <code>npm install -g @wdio/cli</code> 
+<code>npm install -g @wdio/cli</code> 
 
 ### Step 4: Install WebdriverIO, Appium, and Cucumber
 Now, install WebdriverIO along with Appium, Cucumber, and required plugins:
- - <code>npm install @wdio/cli @wdio/local-runner@wdio/cucumber-framework @wdio/appium-service appium</code>
+ <code>npm install @wdio/cli @wdio/local-runner@wdio/cucumber-framework @wdio/appium-service appium</code>
 
 ### Step 5: Configure WebdriverIO
 Generate the WebdriverIO configuration file:
- - <code>npx wdio config</code>
+ <code>npx wdio config</code>
  During the configuration process, make the following selections:
 
 1. Choose **local** as the test runner.
@@ -72,19 +72,17 @@ npm install allure-commandline --save-dev</code>
 ### Configure Allure Reporter in wdio.conf.js
 
 Open your wdio.conf.js file and add @wdio/allure-reporter to the reporters array. You can also specify additional options to customize the report.
-
-- <code>
+<code>
 export const config = {
     reporters: [
         'spec',
         ['allure', {
-            outputDir: 'allure-results',    // Directory for storing Allure results
+            outputDir: 'allure-results',   
             disableWebdriverStepsReporting: true,
             disableWebdriverScreenshotsReporting: false,
         }]
     ],
-};
-</code>
+};</code>
 
 ### Step 7: Run Your Tests
 

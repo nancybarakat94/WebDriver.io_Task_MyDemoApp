@@ -80,9 +80,7 @@ export const config = {
             outputDir: 'allure-results',   
             disableWebdriverStepsReporting: true,
             disableWebdriverScreenshotsReporting: false,
-        }]
-    ],
-};</code>
+        }]],};</code>
 
 ### Step 7: Run Your Tests
 

@@ -54,15 +54,15 @@ After completing the setup, the configuration will be saved as `wdio.conf.js`.
 ## Example `wdio.conf.js` Modifications for Android
 
 In `wdio.conf.js`, update the capabilities to specify the Android device:
+
 <code>
-```javascript
 capabilities: [{
     platformName: 'Android',
     'appium:deviceName': 'Android Emulator',
     'appium:platformVersion': '11.0', // Update as per your emulator or device version
     'appium:app': '/path/to/your/app.apk',
     'appium:automationName': 'UiAutomator2',
-}],</code>
+}] </code>
 
 ### Step 6: Make sure that Allure reports is downloaded
 The reporter generates test data in Allure format, while the commandline tool allows you to generate HTML reports.
